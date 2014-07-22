@@ -1,0 +1,17 @@
+<html>
+    <script language="javascript">
+ 
+        function fillContent(){
+            document.getElementById("content").innerHTML = 
+                 "2.This Content is showed by Android invoke Javascript function.";
+            document.getElementById("link").innerHTML =
+                 "3. Click to invoke Java Object";
+        }
+    
+</script>
+  <body>
+    <p>A Demo<br>1.Android and Javascript invoke each other.</p>
+    <p id="content"></p>
+    <a id="link" onClick="window.injectedObject.test()" href="">TEST</a>
+  </body>
+</html> 
